@@ -66,7 +66,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #4cae4c;
+    background-color: #ae4c6d;
 }
 
 #resultado {
@@ -95,5 +95,17 @@ button[type="submit"]:hover {
 }
 
 #valorTotal {
-    color: #2e8b57;
+    color: #8b2e6f;
+}
+.excluir-icon {
+    color: #f44336;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+    /* Outros estilos conforme necessário */
+}
+
+.excluir-icon:hover {
+    color: #d32f2f;
 }
