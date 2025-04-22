@@ -16,7 +16,8 @@ body {
     width: 400px;
 }
 
-h1 {
+h1
+ {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
@@ -54,7 +55,7 @@ select {
 }
 
 button[type="submit"] {
-    background-color: #5cb85c;
+    background-color: #b85c9c;
     color: white;
     padding: 12px 20px;
     border: none;
