@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Gastos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Gastos</h1>
+        <form id="cadastroForm">
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+            </div>
+
+            <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="moradia">Moradia</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="lazer">Lazer</option>
+                    <option value="educacao">Educação</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <button type="submit">Salvar Gasto</button>
+        </form>
+
+        <div id="resultado" class="hidden">
+            <h2>Gasto Cadastrado:</h2>
+            <p><strong>Descrição:</strong> <span id="res-descricao"></span></p>
+            <p><strong>Valor:</strong> R$ <span id="res-valor"></span></p>
+            <p><strong>Categoria:</strong> <span id="res-categoria"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
