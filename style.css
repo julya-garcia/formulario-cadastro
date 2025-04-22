@@ -80,3 +80,20 @@ button[type="submit"]:hover {
 .hidden {
     display: none;
 }
+#totalGastos {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e6ffe6;
+    border-radius: 4px;
+    text-align: right; 
+    font-weight: bold;
+    color: #333;
+}
+
+#totalGastos h3 {
+    margin: 0;
+}
+
+#valorTotal {
+    color: #2e8b57;
+}
