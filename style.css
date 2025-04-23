@@ -13,11 +13,10 @@ body {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 600px; /* Ajustei a largura para a tabela */
 }
 
-h1
- {
+h1 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
@@ -66,26 +65,84 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #ae4c6d;
+    background-color: #ae4c82;
 }
 
 #resultado {
     margin-top: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 4px;
     background-color: #f9f9f9;
+    margin-bottom: 20px;
 }
 
 .hidden {
     display: none;
 }
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#listaGastos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#listaGastos th,
+#listaGastos td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#listaGastos th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #555;
+}
+
+#listaGastos tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#listaGastos tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.excluir-button {
+    background-color: #f44336; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.excluir-button:hover {
+    background-color: #d32f2f;
+}
+
 #totalGastos {
     margin-top: 20px;
     padding: 15px;
     background-color: #e6ffe6;
+    border: 1px solid #ccffcc;
     border-radius: 4px;
-    text-align: right; 
+    text-align: right;
     font-weight: bold;
     color: #333;
 }
@@ -95,17 +152,9 @@ button[type="submit"]:hover {
 }
 
 #valorTotal {
-    color: #8b2e6f;
+    color: #8b2e77;
 }
-.excluir-icon {
-    color: #f44336;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 10px;
-    font-size: 16px;
-    /* Outros estilos conforme necessário */
-}
-
-.excluir-icon:hover {
-    color: #d32f2f;
+#valor-alto {
+    color: red;
+    font-weight: bold; 
 }

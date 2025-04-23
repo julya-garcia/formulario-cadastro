@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Gastos</title>
+    <title>Cadastro de Gastos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Calculadora de Gastos</h1>
+        <h1>Cadastro de Gastos</h1>
         <form id="cadastroForm">
             <div class="form-group">
                 <label for="descricao">Descrição:</label>
@@ -41,6 +41,24 @@
             <p><strong>Descrição:</strong> <span id="res-descricao"></span></p>
             <p><strong>Valor:</strong> R$ <span id="res-valor"></span></p>
             <p><strong>Categoria:</strong> <span id="res-categoria"></span></p>
+        </div>
+
+        <h2>Lista de Gastos</h2>
+        <table id="listaGastos">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Categoria</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+
+        <div id="totalGastos">
+            <h3>Total de Gastos no Mês: R$ <span id="valorTotal">0.00</span></h3>
         </div>
     </div>
 
