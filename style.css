@@ -152,9 +152,8 @@ h2 {
 }
 
 #valorTotal {
-    color: #8b2e77;
-}
-#valor-alto {
+    color: #8b2e77; valor-alto {
     color: red;
     font-weight: bold; 
+    }
 }
